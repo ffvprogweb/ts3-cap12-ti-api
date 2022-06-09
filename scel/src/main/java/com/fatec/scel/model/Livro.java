@@ -65,7 +65,12 @@ public class Livro {
 		Livro other = (Livro) obj;
 		return Objects.equals(autor, other.autor) && Objects.equals(id, other.id) && Objects.equals(isbn, other.isbn)
 				&& Objects.equals(titulo, other.titulo);
+	}
+	@Override
+	public String toString() {
+		return "Livro [id=" + id + ", isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + "]";
 	}	
+	
 }
 
 
